@@ -344,12 +344,17 @@ nav h3 {
   height: 50vw;
   width: 100vw;
 }
+#page6 {
+  height: 70vw;
+  width: 100%;
+}
 
 #footer {
-  position: fixed;
-  height: 205vh;
-  width: 100%;
   background-color: #0b0500;
+  position: fixed;
+  height: 105vh;
+  width: 100%;
+
   color: #fff;
   z-index: 9;
   bottom: 0;
@@ -357,12 +362,33 @@ nav h3 {
   /* align-items: flex-end; */
   justify-content: flex-end;
   flex-direction: column;
-  padding: 1vw 0;
+  padding: 1vw 3vw;
 }
 
 #footer h1 {
-  font-size: 23vw;
+  font-size: 21vw;
   z-index: 29;
+}
+#footer-header {
+  display: flex;
+  flex-direction: column;
+}
+#header-1 {
+  height: 10vw;
+  position: absolute;
+  top: 19%;
+  z-index: 29;
+  font-size: 3vw;
+  left: 5%;
+  text-decoration: none;
+  color: white;
+}
+#header-1 a {
+  text-decoration: none;
+  color: white;
+}
+#header-1 a:hover{
+  color: rgba(255, 7, 7, 0.5);
 }
 #footer-div1 {
   bottom: 0;
@@ -568,7 +594,7 @@ nav h3 {
     transition: all ease 0.2s;
     height: 9vh;
   }
-  #nav_part2{
+  #nav_part2 {
     display: none;
   }
 
@@ -606,12 +632,12 @@ nav h3 {
     width: 20vw;
     font-size: 1.5vw;
   }
-#mobile-menu{
-  font-size: 2vw;
-  display: flex;
-  text-align: left;
-  align-items: flex-end;
-}
+  #mobile-menu {
+    font-size: 2vw;
+    display: flex;
+    text-align: left;
+    align-items: flex-end;
+  }
   nav h3 {
     display: block;
     padding: 3vw 5vw;
