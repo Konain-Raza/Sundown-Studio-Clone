@@ -2,11 +2,17 @@
   font-family: nue;
   src: url(./Font/NeueHaasDisplayMediu.ttf);
 }
+@font-face {
+  font-family: nuethin;
+  src: url(./Font/NeueHaasDisplayLight.ttf);
+}
 :root {
   --bg-color: #efeae3;
 }
 #main {
+  width: 100vw;
   position: relative;
+
   z-index: 10;
 }
 
@@ -14,15 +20,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: nue;
+
+  cursor: url("https://w7.pngwing.com/pngs/457/630/png-transparent-location-logo-location-computer-icons-symbol-location-miscellaneous-angle-heart.png");
 }
 html,
 body {
   width: 100%;
   height: 100%;
+ 
+  
 }
 
 #page1 {
+
   margin-top: 0;
   min-height: 100vh;
   width: 100%;
@@ -32,6 +42,7 @@ body {
 }
 
 nav {
+  
   padding: 2vw 0vw;
   width: 100%;
   /* background-color: red; */
@@ -40,6 +51,7 @@ nav {
   position: relative;
   z-index: 100;
   justify-content: space-between;
+  
 }
 nav h3 {
   display: none;
@@ -49,9 +61,12 @@ nav h3 {
   display: flex;
   align-items: center;
   gap: 1vw;
+  
+  
 }
 
 #nav_part2 h4 {
+  font-family: nuethin;
   padding: 10px 20px;
   border: 1px solid #0000003c;
   border-radius: 50px;
@@ -105,6 +120,7 @@ nav h3 {
 }
 
 #left h3 {
+  font-family: nue;
   width: 25vw;
   font-size: 1.8vw;
   line-height: 2vw;
@@ -114,6 +130,7 @@ nav h3 {
   font-size: 10vw;
   text-align: right;
   line-height: 8vw;
+  font-family: nue;
 }
 
 #page1 video {
@@ -197,6 +214,7 @@ nav h3 {
   margin-top: 0;
   position: relative;
   background-color: var(--bg-color);
+  font-family: nue;
 }
 .con {
   white-space: nowrap;
@@ -209,6 +227,7 @@ nav h3 {
 #moving-text {
   white-space: nowrap;
   overflow-x: auto;
+  padding-top: 13vh ;
 }
 #moving-text::-webkit-scrollbar {
   display: none;
@@ -225,6 +244,7 @@ nav h3 {
 #moving-text h1 {
   font-size: 9vw;
   display: inline-block;
+  font-family: nue;
 }
 
 @keyframes move {
@@ -259,8 +279,10 @@ nav h3 {
   border-radius: 15px;
 }
 #page2-bottom-part2 p {
-  margin-top: 6vh;
-  font-weight: 100;
+  margin-top: 2vh;
+  font-weight: 500;
+  font-family: nuethin;
+  font-size: 3vh;
 }
 #nav img {
   height: 9vw;
@@ -293,10 +315,12 @@ nav h3 {
 #page3 {
   background-color: var(--bg-color);
   width: 100%;
-  padding: 7vw 0;
+  padding: 0vw 0;
+  font-family: nue;
+ 
 }
 .option-con {
-  height: 120px;
+  height: 150px;
   width: 100%;
   position: relative;
 
@@ -305,11 +329,33 @@ nav h3 {
   align-items: center;
   padding: 0 2vw;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .option-con h2 {
-  font-size: 3vw;
+  font-weight: 900;
+  font-size: 4vw;
   position: relative;
   z-index: 1;
+
+
+}
+.option-con p {
+  
+  font-size: 1.2vw;
+  position: relative;
+  z-index: 1;
+text-align: right;
+font-family: nuethin;
+margin-right: 0;
+color: black;
+font-weight: 500;
+}
+
+.lightgray{
+  color: rgba(128, 128, 128, 0.623);
+  font-family: nuethin;
 }
 
 .option-con .overlay {
@@ -341,8 +387,10 @@ nav h3 {
 #page5 {
   padding: 8vw 0;
   background-color: var(--bg-color);
-  height: 50vw;
+  height: 60vw;
   width: 100vw;
+  line-height: 3vh;
+  font-family: nuethin;
 }
 #page6 {
   height: 70vw;
@@ -350,11 +398,13 @@ nav h3 {
 }
 
 #footer {
+  overflow: hidden; 
+
   background-color: #0b0500;
   position: fixed;
   height: 105vh;
-  width: 100%;
-
+  width: 100vw;
+  font-family: nue;
   color: #fff;
   z-index: 9;
   bottom: 0;
@@ -376,20 +426,22 @@ nav h3 {
 #header-1 {
   height: 10vw;
   position: absolute;
-  top: 19%;
+  top: 12%;
   z-index: 29;
   font-size: 3vw;
   left: 5%;
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.897);
+  
 }
-#header-1 a {
+
+#header-1 a{
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.925);
 }
-#header-1 a:hover{
-  color: rgba(255, 7, 7, 0.5);
-}
+
+
+
 #footer-div1 {
   bottom: 0;
   right: 0;
@@ -454,6 +506,7 @@ nav h3 {
   align-items: center;
   font-size: 1.8vw;
   padding-top: 1vw;
+  list-style: none;
 }
 
 #full-scr {
@@ -464,9 +517,11 @@ nav h3 {
   z-index: 99;
   top: -100%;
   transition: all ease 0.5s;
+  font-family: nue;
 }
 
 #full-div1 {
+  font-family: nue;
   height: 50%;
   width: 100%;
   background-color: #efeae3;
@@ -475,6 +530,7 @@ nav h3 {
 }
 
 #page4 {
+  font-family: nue;
   height: 100vh;
   width: 100vw;
   background-color: var(--bg-color);
@@ -488,9 +544,12 @@ nav h3 {
   width: 100%;
   height: 50%;
   margin-top: 15vh;
+  
+  
 }
 
 .swiper-slide {
+  
   position: relative;
   text-align: center;
   font-size: 18px;
@@ -543,7 +602,10 @@ nav h3 {
   width: 10vw;
   height: 14vh;
 }
-
+.fa-solid fa-arrow-right {
+  color: #000;
+  width: 10vw;
+}
 .swiper-slide p {
   position: absolute;
   top: 40%;
@@ -561,13 +623,7 @@ nav h3 {
   top: -100%;
   transition: all ease 0.8s;
 }
-#full-div1 {
-  height: 50%;
-  width: 100%;
-  background-color: #efeae3;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
+
 @media (max-width: 600px) {
   #page1 {
     min-height: 100vh;
@@ -582,6 +638,48 @@ nav h3 {
     z-index: 99;
     top: -100%;
     transition: all ease 0.5s;
+  }
+#footer{
+  width: 100vw;
+}
+  #page4{
+    height: 100vw;
+  }
+  
+  #full-div1 {
+    height: 55%;
+    width: 100%;
+    background-color: var(--bg-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    
+  }
+  #menua a {
+    color: #000;
+    text-decoration: none;
+    text-align: right;
+    
+  }
+  #menua a:hover {
+    color: #918e8e4d;
+   
+  }
+
+
+  #menua {
+    text-align: right;
+    position: absolute;
+line-height: 10vh;
+text-transform: uppercase;
+    left: 20%;
+    color: #000;
+    font-size: 17vw;
+    bottom: 0;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5vh;
+    
   }
 
   nav {
@@ -598,6 +696,23 @@ nav h3 {
     display: none;
   }
 
+ 
+  #footer{
+    width: 100vw;
+  }
+  #main
+  #black-box {
+    width: 90vw;
+    height: 40vh;
+    background-color: #0b0500;
+    color: white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-right: 25px;
+  }
+
   .swiper {
     width: 100%;
     height: 50%;
@@ -607,7 +722,7 @@ nav h3 {
   .swiper-slide {
     position: relative;
     text-align: center;
-    font-size: 18px;
+    font-size: 2vw;
     background: var(--bg-color);
     display: flex;
     justify-content: center;
@@ -626,11 +741,12 @@ nav h3 {
 
   .swiper-slide p {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 10%;
     text-align: left;
     width: 20vw;
     font-size: 1.5vw;
+    line-height: 1vh;
   }
   #mobile-menu {
     font-size: 2vw;
@@ -640,15 +756,18 @@ nav h3 {
   }
   nav h3 {
     display: block;
-    padding: 3vw 5vw;
+    padding: 3vw 5.5vw;
     border: 1px solid #ababab;
     border-radius: 50px;
     font-size: 4vw;
     font-weight: 200;
-    padding-left: 10vw;
+    font-family: nue;
     z-index: 106;
     background-color: #efeae3;
     color: #000;
+  }
+  nav i {
+    padding-right: 1.9vw;
   }
 
   #hero {
@@ -665,7 +784,9 @@ nav h3 {
     position: relative;
     z-index: 9;
   }
-
+#moving-text{
+  padding-top: 4vh;
+}
   #left h3 {
     width: 80%;
     font-size: 5.5vw;
@@ -687,10 +808,11 @@ nav h3 {
     object-position: center;
     width: 92%;
     margin-left: 4%;
+    
   }
 
   #page2 {
-    min-height: 100vh;
+    min-height: 125vh;
     width: 100%;
     background-color: #efeae3;
     padding: 8vw 0;
@@ -704,6 +826,7 @@ nav h3 {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
+  
   #moving-text {
     white-space: nowrap;
     overflow-x: auto;
@@ -742,9 +865,10 @@ nav h3 {
     font-size: 8.2vw;
     width: 100%;
     line-height: 9vw;
+    padding-bottom: 10vh;
   }
   .option-con {
-    height: 120px;
+    height: 100px;
     width: 100%;
     position: relative;
 
@@ -753,6 +877,14 @@ nav h3 {
     align-items: center;
     padding: 0 2vw;
     overflow: hidden;
+  }
+  .option-con p {
+  
+    font-size: 3vw;
+    position: relative;
+    z-index: 1;
+  text-align: right;
+  font-family: nuethin;
   }
   .option-con h2 {
     font-size: 8vw;
@@ -785,16 +917,18 @@ nav h3 {
     background-position: center;
   }
   #page2-bottom-part2 {
-    width: 70%;
+    width: 100%;
   }
   #page2-bottom img {
+    
+    /* margin: 3vw; */
     width: 100%;
     border-radius: 10px;
   }
   #page2-bottom-part2 p {
     font-weight: 200;
     margin-top: 2vw;
-    font-size: 3vw;
+    font-size: 5vw;
   }
   #nav img {
     height: 9vw;
@@ -862,6 +996,7 @@ nav h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: nue;
 }
 
 #loader h1 {
@@ -898,24 +1033,50 @@ nav h3 {
   }
 }
 
+#project-button {
+  width: 29vw;
+  height: 25vh;
+  margin-left: 5vw;
+  margin-top: 7vh;
+  position: relative;
+}
+#project-button h4 {
+  padding: 3vw 3vw;
+  border: 1px solid #0000003c;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #000000bb;
+  transition: all ease 0.4s;
+  position: relative;
+  font-size: 4vw;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+}
 @media (max-width: 600px) {
   #loader h1 {
     font-size: 9vw;
   }
-  #project-button a img {
-    width: 1vw;
-    height: 5vw;
-  }
   #project-button {
-    width: 70vw;
+width: 20vw;
     height: 20vh;
-    margin-left: 5vw;
-    margin-top: 7vh;
-    padding: 1vw 5vw;
+    padding: 4vh 2vw;
   }
-  #project-button p {
-    width: 30vw;
+  #project-button h4 {
+   
+    border: 1px solid #0000003c;
+    border-radius: 50px;
+   font-size: 10vw;
+    color: #000000bb;
+    transition: all ease 0.3s;
+    position: relative;
+
+    overflow: hidden;
+    
+    left: 0;
   }
+
+ 
 }
 
 #black-box {
@@ -927,7 +1088,7 @@ nav h3 {
   display: flex;
   justify-content: center;
   position: absolute;
-  border-right: 25px;
+  border-right: 35px;
 }
 
 #left-bbox {
@@ -949,7 +1110,7 @@ nav h3 {
   top: 0;
   height: 100%;
   position: absolute;
-  z-index: 0;
+  /* z-index: 0; */
   background-color: #0b0500;
   border-right: 25px;
 }
@@ -963,6 +1124,7 @@ nav h3 {
   margin-top: 3vw;
   width: 30vw;
   font-size: 1.2vw;
+  font-family: nuethin;
 }
 #right-bbox img {
   border-radius: 25px;
@@ -976,14 +1138,15 @@ nav h3 {
 }
 
 #project-button {
-  width: 30vw;
-  height: 10vh;
+  width: 19vw;
+  height: 15vh;
   margin-left: 5vw;
   margin-top: 7vh;
   position: relative;
 }
+
 #project-button h4 {
-  padding: 10px 80px;
+  padding: 1vw 2vw;
   border: 1px solid #0000003c;
   border-radius: 50px;
   font-weight: 500;
@@ -1022,9 +1185,12 @@ nav h3 {
   text-decoration: none;
   position: relative;
   z-index: 9;
-  padding-right: 2vw;
+  /* padding-right: 2vw; */
 }
 
 #project-button h4:hover a {
   color: white;
+}
+#project-button i {
+  padding-left: 1vw;
 }
