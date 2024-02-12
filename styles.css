@@ -422,22 +422,56 @@ font-weight: 500;
 #footer-header {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 #header-1 {
   height: 10vw;
   position: absolute;
-  top: 12%;
+  top: 7%;
   z-index: 29;
   font-size: 3vw;
-  left: 5%;
+  left: 8%;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.897);
   
 }
-
+#header-2 {
+  font-family: nuethin;
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 8%;
+  z-index: 29;
+  font-size: 1.5vw;
+  right: 15%;
+ 
+  color: rgba(255, 255, 255, 0.808);
+  
+}
+#header-2 input {
+  font-family: nuethin;
+ margin-top: 2vh;
+width: 100%;
+  top: 12%;
+  z-index: 29;
+  height: 5vh;
+  right: 0;
+ background-color: #ebdfdf00;
+  font-size: 1.5vw;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgba(194, 194, 194, 0.699);
+}
 #header-1 a{
   text-decoration: none;
   color: rgba(255, 255, 255, 0.925);
+}
+::placeholder {
+  color: rgba(194, 194, 194, 0.699);
+  opacity: 0.8;
+  font-size: 1.5vw;
+  padding-bottom: 2vh;
 }
 
 
